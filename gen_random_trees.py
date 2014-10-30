@@ -9,6 +9,9 @@ The number of binary trees is quite large even for a small number of taxa.
 
 import random as rnd
 
+def star_tree(taxa_list):
+    return "("+ ",".join(taxa_list)+");"
+
 def gen_rand_tree(taxa_list):    
     rnd.shuffle(taxa_list)
     while(len(taxa_list)  > 1):
