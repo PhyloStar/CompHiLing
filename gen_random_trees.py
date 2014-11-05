@@ -21,7 +21,9 @@ def gen_rand_tree(taxa_list):
         rnd.shuffle(taxa_list)
         
     taxa_list.append(";")    
-    return "".join(taxa_list)def gen_rand_tree_brlen(taxa_list):    
+    return "".join(taxa_list)
+    
+def gen_rand_tree_brlen(taxa_list):    
     rnd.shuffle(taxa_list)
     brlen_taxa_list = []
     nbr = 2*len(taxa_list)-3
