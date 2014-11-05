@@ -23,7 +23,10 @@ def gen_rand_tree(taxa_list):
     taxa_list.append(";")    
     return "".join(taxa_list)
     
-def gen_rand_tree_brlen(taxa_list):    
+def gen_rand_tree_brlen(taxa_list): 
+    """Generates a random tree with branch lengths 
+    in order of maximum number of total number of internal branches
+    """
     rnd.shuffle(taxa_list)
     brlen_taxa_list = []
     nbr = 2*len(taxa_list)-3
